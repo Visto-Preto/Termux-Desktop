@@ -14,7 +14,7 @@ echo -e '''
 sleep 3
 clear
 
-apt update && apt upgrade -y
+apt update
 apt install -y wget git cowsay python
 pip install lolcat
 clear
