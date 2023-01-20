@@ -11,7 +11,7 @@ echo -e '''
  
  '''
 
-sleep 1
+sleep 2
 clear
 
 apt update && apt upgrade -y
@@ -24,8 +24,8 @@ echo -e ' '
 curl -sLf https://raw.githubusercontent.com/Visto-Preto/Termux-Desktop/master/about/about | lolcat
 echo -e 'Version : '$(curl -sLf https://raw.githubusercontent.com/Visto-Preto/Termux-Desktop/master/about/version) | lolcat
 echo ' '
-sleep 0.5
-echo -e '\e[1;36m instalando o xfce4 e aplicativos basicos...\e[1m'
+sleep 1
+echo -e '\e[1;36m instalando o xfce4 e aplicativos basicos...\e[m\n'
 sleep 1
 apt install -y x11-repo 
 apt update
