@@ -8,15 +8,16 @@ clear
 
 cd $HOME
 
-echo -e '\e[1;36m installing packages, it is necessary  \e[1m'
+echo -e '\e[1;36m Atualizando e baixando pacotes e suas dependencias \e[1m'
 echo -e '''
-\e[1;31m Download speed depends on
- your internet connection \e[1m'''
-
-sleep 3
-
+\e[1;31m A velocidade de download depende da 
+ sua conexao com a internet \e[1m'''
+sleep 2
 clear
 
-echo -e '\e[1;36m installing xfce4 and basic apps...\e[1m'
+apt update && apt upgrade -y
+apt install -y wget git cowsay python
+pip install lolcat
+clear
 
-sleep 1
+cowsay -f eyes Visto Preto | lolcat
