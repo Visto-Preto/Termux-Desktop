@@ -20,4 +20,4 @@ apt install -y wget git cowsay python
 pip install lolcat
 clear
 
-cowsay -f eyes Visto Preto | lolcat
+cowsay -f eyes Termux Desktop | lolcat
