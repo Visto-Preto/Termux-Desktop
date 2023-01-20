@@ -15,7 +15,7 @@ sleep 3
 clear
 
 apt update
-apt install -y wget git cowsay python
+apt install -y wget git nano cowsay python
 pip install lolcat
 clear
 
@@ -29,3 +29,4 @@ echo -e '\033[1;36m Instalando o\033[1;32m xfce4\033[1;36m e aplicativos\033[1;3
 sleep 1
 apt install -y x11-repo 
 apt update
+apt install -y xfce4 tigervnc
