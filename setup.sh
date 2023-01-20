@@ -11,7 +11,7 @@ echo -e '''
  
  '''
 
-sleep 2
+sleep 3
 clear
 
 apt update && apt upgrade -y
