@@ -21,3 +21,5 @@ pip install lolcat
 clear
 
 cowsay -f eyes Termux Desktop | lolcat
+curl -sLf https://raw.githubusercontent.com/Visto-Preto/Termux-Desktop/master/about/about | lolcat
+curl -sLf https://raw.githubusercontent.com/Visto-Preto/Termux-Desktop/master/about/version | lolcat
