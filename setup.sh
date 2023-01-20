@@ -25,8 +25,7 @@ curl -sLf https://raw.githubusercontent.com/Visto-Preto/Termux-Desktop/master/ab
 echo -e 'Version : '$(curl -sLf https://raw.githubusercontent.com/Visto-Preto/Termux-Desktop/master/about/version) | lolcat
 echo ' '
 sleep 1
-echo -e '\e[1;36m instalando o xfce4 e aplicativos basicos...\e[m'
+echo -e '\e[1;36m instalando o xfce4 e aplicativos basicos...\e[0m\n'
 sleep 1
-echo -e '  '
 apt install -y x11-repo 
 apt update
