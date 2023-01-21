@@ -39,6 +39,8 @@ apt install -y audacious
 echo -e "\033[1;36mA instalacao do\033[1;32m audacious \033[1;36mfoi realizada corretamente!\033[0m"
 apt install -y epiphany
 echo -e "\033[1;36mA instalacao do\033[1;32m epiphany \033[1;36mfoi realizada corretamente!\033[0m"
+apt install -y geany
+echo -e "\033[1;36mA instalacao do\033[1;32m geany \033[1;36mfoi realizada corretamente!\033[0m"
 apt install -y pavucontrol-qt
 echo -e "\033[1;36mA instalacao do\033[1;32m pavucontrol-qt \033[1;36mfoi realizada corretamente!\033[0m"
 
