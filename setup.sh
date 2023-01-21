@@ -15,7 +15,7 @@ sleep 3
 clear
 
 apt update
-apt install -y wget git nano cowsay python
+apt install -y wget git nano cowsay python zsh
 pip install lolcat
 clear
 
@@ -51,4 +51,5 @@ echo -e 'Version : '$(curl -sLf https://raw.githubusercontent.com/Visto-Preto/Te
 echo ' '
 sleep 1
 echo -e "\033[1;36mTermux Desktop instalado"
-echo -e "Para iniciar o servidor vnc, use o comando: \033[1;32mvncserver\033[1;36m para pará-lo, use o comando: \033[1;32mvncserver -kill: 1\033[1;36m Substitua: \033[1;32m1\033[1;36m pela porta na qual o serviço vnc está sendo executado\033[0m"
+echo -e "Para iniciar o servidor vnc, reinicie o termux e use o comando: \033[1;32mvncserver\033[1;36m para pará-lo, use o comando: \033[1;32mvncserver -kill: 1\033[1;36m Substitua: \033[1;32m1\033[1;36m pela porta na qual o serviço vnc está sendo executado\033[0m"
+chsh -s zsh
