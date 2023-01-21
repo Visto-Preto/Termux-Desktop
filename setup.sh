@@ -1,7 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
 clear
-
 cd $HOME
 
 echo -e '\033[1;36m Atualizando e baixando pacotes e suas dependencias \033[0m'
@@ -38,14 +37,15 @@ apt install -y xfce4-goodies
 echo -e "\033[1;36mA instalacao do\033[1;32m xfce4-goodies \033[1;36mfoi realizada corretamente!\033[0m"
 apt install -y audacious
 echo -e "\033[1;36mA instalacao do\033[1;32m audacious \033[1;36mfoi realizada corretamente!\033[0m"
-apt install -y firefox
-echo -e "\033[1;36mA instalacao do\033[1;32m firefox \033[1;36mfoi realizada corretamente!\033[0m"
+apt install -y epiphany
+echo -e "\033[1;36mA instalacao do\033[1;32m epiphany \033[1;36mfoi realizada corretamente!\033[0m"
 apt install -y pavucontrol-qt
 echo -e "\033[1;36mA instalacao do\033[1;32m pavucontrol-qt \033[1;36mfoi realizada corretamente!\033[0m"
 
 sleep 2
 
 echo -e "\033[1;36mCriado diretorios\033[0m"
+
 mkdir $HOME/Downloads 
 mkdir $HOME/Documents 
 mkdir $HOME/Pictures 
@@ -55,8 +55,6 @@ termux-setup-storage
 
 ln -s $HOME/storage/music Music
 ln -s /sdcard $HOME/Sdcard
-
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 wget https://github.com/Visto-Preto/Termux-Desktop/raw/master/termux-data.tar.xz
 tar -xvf termux-data.tar.xz
@@ -70,4 +68,3 @@ sleep 1
 echo -e "\033[1;36mTermux Desktop instalado"
 echo ' '
 echo -e "Para iniciar o servidor vnc, reinicie o termux e use o comando: \033[1;32mvncserver\033[1;36m para pará-lo, use o comando: \033[1;32mvncserver -kill: 1\033[1;36m Substitua: \033[1;32m1\033[1;36m pela porta na qual o serviço vnc está sendo executado!\n\n\033[0m"
-chsh -s zsh
