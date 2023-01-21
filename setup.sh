@@ -67,5 +67,5 @@ echo ' '
 sleep 1
 echo -e "\033[1;36mTermux Desktop instalado"
 echo ' '
-echo -e "Para iniciar o servidor vnc, reinicie o termux e use o comando: \033[1;32mvncserver\033[1;36m para pará-lo, use o comando: \033[1;32mvncserver -kill: 1\033[1;36m Substitua: \033[1;32m1\033[1;36m pela porta na qual o serviço vnc está sendo executado\033[0m"
+echo -e "Para iniciar o servidor vnc, reinicie o termux e use o comando: \033[1;32mvncserver\033[1;36m para pará-lo, use o comando: \033[1;32mvncserver -kill: 1\033[1;36m Substitua: \033[1;32m1\033[1;36m pela porta na qual o serviço vnc está sendo executado!\n\n\033[0m"
 chsh -s zsh
