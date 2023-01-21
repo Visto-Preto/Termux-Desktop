@@ -29,4 +29,14 @@ echo -e '\033[1;36m Instalando o\033[1;32m xfce4\033[1;36m e aplicativos\033[1;3
 sleep 1
 apt install -y x11-repo 
 apt update
-apt install -y xfce4 tigervnc xfce4-goodies  audacious epiphany
+apt install -y xfce4 tigervnc xfce4-goodies audacious firefox
+
+mkdir $HOME/Downloads 
+mkdir $HOME/Documents 
+mkdir $HOME/Pictures 
+mkdir $HOME/Videos 
+
+termux-setup-storage
+
+ln -s $HOME/storage/music Music
+ln -s /sdcard $HOME/Sdcard
