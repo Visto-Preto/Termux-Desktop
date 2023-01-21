@@ -56,6 +56,8 @@ termux-setup-storage
 ln -s $HOME/storage/music Music
 ln -s /sdcard $HOME/Sdcard
 
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 wget https://github.com/Visto-Preto/Termux-Desktop/raw/master/termux-data.tar.xz
 tar -xvf termux-data.tar.xz
 echo ' '
