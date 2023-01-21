@@ -40,3 +40,15 @@ termux-setup-storage
 
 ln -s $HOME/storage/music Music
 ln -s /sdcard $HOME/Sdcard
+
+wget https://github.com/Visto-Preto/Termux-Desktop/blob/master/termux-data.tar.xz
+tar -xvf termux-data.tar.xz
+
+cowsay -f eyes Termux Desktop | lolcat
+echo -e ' '
+curl -sLf https://raw.githubusercontent.com/Visto-Preto/Termux-Desktop/master/about/about | lolcat
+echo -e 'Version : '$(curl -sLf https://raw.githubusercontent.com/Visto-Preto/Termux-Desktop/master/about/version) | lolcat
+echo ' '
+sleep 1
+echo -e "\033[1;36mTermux Desktop instalado"
+echo -e "Para iniciar o servidor vnc, use o comando: \033[1;32mvncserver\033[1;36m para pará-lo, use o comando: \033[1;32mvncserver -kill: 1\033[1;36m Substitua: \033[1;32m1\033[1;36m pela porta na qual o serviço vnc está sendo executado\033[0m"
