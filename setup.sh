@@ -56,9 +56,9 @@ termux-setup-storage
 ln -s $HOME/storage/music Music
 ln -s /sdcard $HOME/Sdcard
 
-wget https://github.com/Visto-Preto/Termux-Desktop/blob/master/termux-data.tar.xz
+wget https://github.com/Visto-Preto/Termux-Desktop/master/termux-data.tar.xz
 tar -xvf termux-data.tar.xz
-
+echo ' '
 cowsay -f eyes Termux Desktop | lolcat
 echo -e ' '
 curl -sLf https://raw.githubusercontent.com/Visto-Preto/Termux-Desktop/master/about/about | lolcat
