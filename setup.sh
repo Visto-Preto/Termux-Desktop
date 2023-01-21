@@ -29,8 +29,23 @@ echo -e '\033[1;36m Instalando o\033[1;32m xfce4\033[1;36m e aplicativos\033[1;3
 sleep 1
 apt install -y x11-repo 
 apt update
-apt install -y xfce4 tigervnc xfce4-goodies audacious firefox
 
+apt install -y xfce4 
+echo -e "\033[1;36mA instalacao do\033[1;32m xfce4 \033[1;36mfoi realizada corretamente!\033[0m"
+apt install -y tigervnc 
+echo -e "\033[1;36mA instalacao do\033[1;32m tigervnc \033[1;36mfoi realizada corretamente!\033[0m"
+apt install -y xfce4-goodies 
+echo -e "\033[1;36mA instalacao do\033[1;32m xfce4-goodies \033[1;36mfoi realizada corretamente!\033[0m"
+apt install -y audacious
+echo -e "\033[1;36mA instalacao do\033[1;32m audacious \033[1;36mfoi realizada corretamente!\033[0m"
+apt install -y firefox
+echo -e "\033[1;36mA instalacao do\033[1;32m firefox \033[1;36mfoi realizada corretamente!\033[0m"
+apt install -y pavucontrol-qt
+echo -e "\033[1;36mA instalacao do\033[1;32m pavucontrol-qt \033[1;36mfoi realizada corretamente!\033[0m"
+
+sleep 2
+
+echo -e "\033[1;36mCriado diretorios\033[0m"
 mkdir $HOME/Downloads 
 mkdir $HOME/Documents 
 mkdir $HOME/Pictures 
@@ -51,5 +66,6 @@ echo -e 'Version : '$(curl -sLf https://raw.githubusercontent.com/Visto-Preto/Te
 echo ' '
 sleep 1
 echo -e "\033[1;36mTermux Desktop instalado"
+echo ' '
 echo -e "Para iniciar o servidor vnc, reinicie o termux e use o comando: \033[1;32mvncserver\033[1;36m para pará-lo, use o comando: \033[1;32mvncserver -kill: 1\033[1;36m Substitua: \033[1;32m1\033[1;36m pela porta na qual o serviço vnc está sendo executado\033[0m"
 chsh -s zsh
