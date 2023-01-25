@@ -22,7 +22,7 @@ curl -sLf https://raw.githubusercontent.com/Visto-Preto/Termux-Desktop/master/ab
 echo -e 'Version : '$(curl -sLf https://raw.githubusercontent.com/Visto-Preto/Termux-Desktop/master/about/version) | lolcat
 echo ' '
 echo -e "\033[1;36mPrecione o\033[1;32m ENTER\033[1;36m para continuar\033[0m\n"
-read ENTER
+read
 echo -e '\033[1;36m Instalando o\033[1;32m xfce4\033[1;36m e aplicativos\033[1;32m basicos\033[1;36m ...\033[0m\n'
 sleep 2
 
