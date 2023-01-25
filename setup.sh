@@ -21,8 +21,6 @@ echo -e ' '
 curl -sLf https://raw.githubusercontent.com/Visto-Preto/Termux-Desktop/master/about/about | lolcat
 echo -e 'Version : '$(curl -sLf https://raw.githubusercontent.com/Visto-Preto/Termux-Desktop/master/about/version) | lolcat
 echo ' '
-echo -e "\033[1;36mPrecione o\033[1;32m ENTER\033[1;36m para continuar\033[0m\n"
-read
 echo -e '\033[1;36m Instalando o\033[1;32m xfce4\033[1;36m e aplicativos\033[1;32m basicos\033[1;36m ...\033[0m\n'
 sleep 2
 
@@ -46,7 +44,7 @@ echo -e "\033[1;36mA instalacao do\033[1;32m geany \033[1;36mfoi realizada corre
 apt install -y pavucontrol-qt
 echo -e "\033[1;36mA instalacao do\033[1;32m pavucontrol-qt \033[1;36mfoi realizada corretamente!\033[0m"
 apt install -y ttf-meslolgs
-echo -e "\033[1;36mA instalacao do\033[1;32m ttf-meslolgs\033[1;36mfoi realizada corretamente!\033[0m"
+echo -e "\033[1;36mA instalacao do\033[1;32m ttf-meslolgs \033[1;36mfoi realizada corretamente!\033[0m"
 
 sleep 2
 
@@ -54,19 +52,19 @@ echo -e "\033[1;36mCriado diretorios\033[0m"
 
 mkdir $HOME/Downloads 
 mkdir $HOME/Documents 
-mkdir $HOME/Pictures 
 mkdir $HOME/Videos 
 mkdir $HOME/Templates
 
 termux-setup-storage
 ln -s /sdcard/Music $HOME/Music
 ln -s /sdcard $HOME/Sdcard
-
+ln -s /sdcard/Pictures $HOME/Pictures 
 
 wget https://github.com/Visto-Preto/Termux-Desktop/raw/master/termux-data.tar.xz
 tar -xvf termux-data.tar.xz
-
-echo -e "\033[1;36mConfigurando o Termux-Desktop\033[0m"
+rm -rf termux-data.tar.xz
+echo -e "\n\n\033[1;36mConfigurando o Termux-Desktop\033[0m\n\n"
+sleep 2
 
 echo ' '
 cowsay -f eyes Termux Desktop | lolcat
